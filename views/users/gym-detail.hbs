@@ -1,0 +1,188 @@
+<section id="content">
+    <main>
+            <div>
+                <h2 class="gym-name">ULTIMA</h2>
+            </div>
+
+            <!-- Carousel container -->
+            <div class="gym-detail-carousel-container">
+                <!-- Bootstrap Carousel HTML goes here -->
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <!-- Video -->
+                        <div class="carousel-item active">
+                            <video class="d-block w-100" muted autoplay loop>
+                                <source src="videos/crossfit-1.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <!-- Images -->
+                        <div class="carousel-item">
+                            <img src="images/Gym Detail/facility zoom out.jpg" class="d-block w-100" alt="Image 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/Gym Detail/weight-3.jpg" class="d-block w-100" alt="Image 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/Gym Detail/meeting.jpg" class="d-block w-100" alt="Image 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/Gym Detail/pilates-1.jpg" class="d-block w-100" alt="Image 4">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/Gym Detail/weight-1t.jpg" class="d-block w-100" alt="Image 5">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/Gym Detail/weight-4.jpg" class="d-block w-100" alt="Image 6">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <!-- Video -->
+                        <div class="gym-detail-video-container">
+                            <video class="d-block w-100" muted autoplay loop>
+                                <source src="videos/crossfit-1.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <!-- Image container for higher screen sizes -->
+                        <div class="gym-detail-image-container">
+                            <!-- Images go here -->
+                            <img src="images/Gym Detail/facility zoom out.jpg" alt="Image 1">
+                            <img src="images/Gym Detail/weight-3.jpg" alt="Image 2">
+                            <img src="images/Gym Detail/meeting.jpg" alt="Image 3">
+                            <img src="images/Gym Detail/pilates-1.jpg" alt="Image 4">
+                            <img src="images/Gym Detail/weight-1t.jpg" alt="Image 5">
+                            <img src="images/Gym Detail/weight-4.jpg" alt="Image 6">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="table-data">
+                <div class="order">
+                    <div class="location container-fluid border-bottom">
+                        <div class="row">
+                            <div class="col-12 col-lg-6 d-flex flex-column justify-content-center p-0">
+                                <div class="d-flex flex-row">
+                                    <i class="fa-solid fa-location-dot mt-1 mr-3"></i>
+                                    <p class="address">
+                                        Pala Kottaramattom • Kottayam <br>
+                                        123, 3rd Floor, Gym Avenue, <br>
+                                        Near Pala Stadium,<br>
+                                        Kottaramattom, Pala
+                                    </p>
+                                </div>
+                                <div>
+                                    <a class="ml-5" onclick="navigateToDirection()">
+                                        <div class="navigate d-flex flex-row">
+                                            <p>NAVIGATE</p>
+                                            <i class="fa-solid fa-location-arrow ml-1" style="font-size: 1.5rem;"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-12  col-lg-6 mb-4 p-0">
+                                <div id="map"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="working-hour border-bottom mt-3">
+                        <div class="d-flex flex-row">
+                            <i class="fa-regular fa-clock mt-1 mr-3"></i>
+                            <h5>Working hours</h5>
+                        </div>
+                        <div class="d-flex flex-row">
+                            <p style="padding-left: 32px;">5:30 am - 7:30 pm</p>
+                            <p class="text-success ml-5 open-status">open</p>
+                            <p class="text-danger ml-5 close-status">closed</p>
+                        </div>
+                    </div>
+                    <div class="amneties border-bottom mt-3">
+                        <h5>Amneties</h5>
+                        <div class="amneties-flex-container">
+                            <div class="amneties-item"><i class="fa-solid fa-door-closed mr-2"></i>Locker</div>
+                            <div class="amneties-item"><i class="fa-solid fa-car mr-2"></i>Car Parking</div>
+                            <div class="amneties-item"><i class="fa-solid fa-motorcycle mr-2"></i>Bike Parking</div>
+                            <div class="amneties-item"><i class="fa-solid fa-shower mr-2"></i>Shower</div>
+                            <div class="amneties-item"><i class="fa-solid fa-eye mr-2"></i>CCTV</div>
+                            <div class="amneties-item"><i class="fa-solid fa-couch mr-2"></i>Lounge</div>
+                        </div>
+                    </div>
+                    <div class="gym-description border-bottom mt-3">
+                        <h5>Desciption</h5>
+                        <p>
+                            Welcome to FitZone Gym! We're your neighborhood fitness hub, offering a cozy yet dynamic
+                            space for your workouts. With top-notch equipment, friendly staff, and energizing ambiance,
+                            we're here to make every sweat count. Come in, break a sweat, and let's crush those fitness
+                            goals together!</p>
+                    </div>
+
+                    <div class="container-fluid mt-3">
+                        <div class="row">
+                            <div class="col-12 col-md-6 ">
+                                <div class="gym-detail-card-basic mx-auto">
+                                    <div class="gym-detail-card-header gym-detail-header-basic">
+                                        <h4>Daily</h4>
+                                    </div>
+                                    <div class="gym-detail-card-body">
+                                        <p>
+                                        <h2>Rs 30 / day</h2>
+                                        </p>
+                                        <div class="card-element-hidden-basic p-3">
+                                            <ul class="gym-detail-card-element-container m-3 text-left">
+                                                <li class="card-element">Access to gym facilities for 3 hours</li>
+                                                <li class="card-element">Basic nutritional guidance</li>
+                                                <li class="card-element">One-time entry</li>
+                                                <!-- <li class="card-element">20000 users</li> -->
+                                            </ul>
+                                            <button class="price-btn price-btn-basic">Book now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-6">
+                                <div class="gym-detail-card-standard mx-auto">
+                                    <div class="gym-detail-card-header gym-detail-header-standard">
+                                        <h4>Membership</h4>
+                                    </div>
+                                    <div class="gym-detail-card-body">
+                                        <p>
+                                        <h2>Rs 900 / mo</h2>
+                                        </p>
+                                        <div class="card-element-hidden-standard p-3">
+                                            <ul class="gym-detail-card-element-container card-element-list m-3 text-left">
+                                                <li class="card-element">Unlimited access to gym facilities</li>
+                                                <li class="card-element">Personalized workout plans</li>
+                                                <li class="card-element">Assessment of progress on a quarterly basis
+                                                </li>
+                                                <!-- <li class="card-element">40000 users</li> -->
+                                            </ul>
+                                            <button class="price-btn price-btn-standard">Book now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+</section>
+
+
